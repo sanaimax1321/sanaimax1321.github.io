@@ -1,64 +1,92 @@
---- contact.html ---
-<li><a href="projects.html">Projects</a></li>
-<li><a href="education.html">Education</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Sanjay S</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a2d9b6b0a6.js" crossorigin="anonymous"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="nav-wrap">
+  <div class="container nav">
+    <a class="brand" href="index.html">Sanjay S</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+  </div>
 </header>
 
-
+<!-- Contact Section -->
 <main>
 <section class="contact-section" data-aos="fade-up">
-<div class="container contact-inner">
-<div class="contact-left">
-<h1>Get in touch</h1>
-<p>Feel free to reach out for collaborations, projects, or job opportunities. I usually respond within a few days.</p>
+  <div class="container contact-inner">
 
+    <!-- Left: Contact Info -->
+    <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+      <h1>Get in Touch</h1>
+      <p>Feel free to reach out for collaborations, projects, or job opportunities. I usually respond within a few days.</p>
 
-<div class="contact-cards">
-<div class="card"><i class="fas fa-envelope"></i><a href="mailto:sanjaysanjay23ai@gmail.com">sanjaysanjay23ai@gmail.com</a></div>
-<div class="card"><i class="fab fa-github"></i><a href="https://github.com/sanjay5656" target="_blank">github.com/sanjay5656</a></div>
-<div class="card"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/sanjays-aiengineer/" target="_blank">LinkedIn</a></div>
-</div>
-</div>
+      <div class="contact-cards">
+        <div class="card"><i class="fas fa-envelope"></i> <a href="mailto:sanjaysanjay23ai@gmail.com">sanjaysanjay23ai@gmail.com</a></div>
+        <div class="card"><i class="fab fa-github"></i> <a href="https://github.com/sanjay5656" target="_blank">github.com/sanjay5656</a></div>
+        <div class="card"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sanjays-aiengineer/" target="_blank">LinkedIn</a></div>
+      </div>
+    </div>
 
+    <!-- Right: Contact Form -->
+    <div class="contact-right" data-aos="fade-left" data-aos-duration="1000">
+      <form action="https://formspree.io/f/mnqvkwyg" method="POST" class="contact-form animate__animated animate__fadeInUp">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
 
-<div class="contact-right">
-<!-- Basic contact form using Formspree (replace action with your form endpoint if desired) -->
-<form action="https://formspree.io/f/mnqvkwyg" method="POST" class="contact-form">
-<label for="name">Name</label>
-<input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
 
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
-<label for="email">Email</label>
-<input id="email" name="email" type="email" required>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
 
-
-<label for="message">Message</label>
-<textarea id="message" name="message" rows="6" required></textarea>
-
-
-<button class="btn" type="submit">Send Message</button>
-</form>
-</div>
-
-
-</div>
+  </div>
 </section>
 </main>
 
-
+<!-- Footer -->
 <footer class="site-footer">
-<div class="container">
-<p>&copy; 2025 Sanjay S</p>
-</div>
+  <div class="container">
+    <p>&copy; 2025 Sanjay S</p>
+  </div>
 </footer>
 
-
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-AOS.init({ duration: 800, once: true });
+  AOS.init({ duration: 800, once: true });
 </script>
 <script src="assets/js/main.js"></script>
 </body>

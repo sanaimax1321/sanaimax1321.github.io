@@ -1,94 +1,142 @@
---- index.html ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sanjay S — Machine Learning Engineer</title>
-
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <!-- AOS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 <!-- Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <!-- Font Awesome (icons) -->
 <script src="https://kit.fontawesome.com/a2d9b6b0a6.js" crossorigin="anonymous"></script>
 
-
+<!-- Custom CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+<!-- Navigation -->
 <header class="nav-wrap">
-<div class="container nav">
-<a class="brand" href="index.html">Sanjay S</a>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="education.html">Education</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-<button id="menuToggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
-</div>
+  <div class="container nav">
+    <a class="brand" href="index.html">Sanjay S</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+  </div>
 </header>
 
-
-<main>
-<!-- Hero -->
+<!-- Hero Section -->
 <section class="hero">
-<div class="container hero-inner" data-aos="fade-up">
-<div class="hero-left">
-<h1 class="hero-title">Hi — I'm <span>Sanjay S</span></h1>
-<p class="hero-sub">Machine Learning Engineer building practical ML & AI systems — NLP, CV, and production-ready pipelines.</p>
+  <div class="container hero-inner">
+    
+    <!-- Left Side: Intro Text -->
+    <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+      <h1 class="hero-title">Hi — I'm <span>Sanjay S</span></h1>
+      <p class="hero-sub">
+        Machine Learning Engineer building practical ML & AI systems — NLP, CV, and production-ready pipelines.
+      </p>
 
+      <!-- Call to Action -->
+      <div class="cta">
+        <a class="btn btn-primary animate__animated animate__fadeInUp animate__delay-1s" href="projects.html">
+          View Projects <span class="btn-arrow">→</span>
+        </a>
+        <a class="btn btn-outline animate__animated animate__fadeInUp animate__delay-2s" href="contact.html">
+          Contact Me <span class="btn-arrow">✉</span>
+        </a>
+      </div>
 
-<div class="cta">
-<a class="btn" href="projects.html">View Projects</a>
-<a class="btn btn-outline" href="contact.html">Contact Me</a>
-</div>
+      <!-- Social Links -->
+      <ul class="socials">
+        <li><a href="https://github.com/sanjay5656" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/sanjays-aiengineer/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="mailto:sanjaysanjay23ai@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+      </ul>
+    </div>
 
+    <!-- Right Side: Portrait -->
+    <div class="hero-right" data-aos="fade-left" data-aos-duration="1000">
+      <div class="portrait">
+        <img src="assets/images/profile.jpg" alt="Sanjay S" onerror="this.src='https://via.placeholder.com/360x360?text=Profile'">
+      </div>
+    </div>
 
-<ul class="socials">
-<li><a href="https://github.com/sanjay5656" target="_blank" rel="noopener">GitHub <i class="fab fa-github"></i></a></li>
-<li><a href="https://www.linkedin.com/in/sanjays-aiengineer/" target="_blank" rel="noopener">LinkedIn <i class="fab fa-linkedin"></i></a></li>
-<li><a href="mailto:sanjaysanjay23ai@gmail.com">Email <i class="fas fa-envelope"></i></a></li>
-</ul>
-</div>
-
-
-<div class="hero-right" data-aos="zoom-in">
-<div class="portrait">
-<img src="assets/images/profile.jpg" alt="Sanjay S" onerror="this.src='https://via.placeholder.com/360x360?text=Profile'">
-</div>
-</div>
-</div>
+  </div>
 </section>
 
+<!-- Summary / About Work -->
+<section class="summary" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <h2>About my work</h2>
+    <p>
+      I design and implement machine learning solutions that move from research to production. My focus areas are natural language processing, computer vision, and building robust data pipelines. I enjoy simplifying complex problems, improving model performance, and making systems reliable and maintainable.
+    </p>
 
-<!-- Intro / Summary -->
-<section class="summary" data-aos="fade-up">
-<div class="container">
-<h2>About my work</h2>
-<p>
-I design and implement machine learning solutions that move from research to production. My focus areas are natural language processing, computer vision, and building robust data pipelines. I enjoy simplifying complex problems, improving model performance, and making systems reliable and maintainable.
-</p>
-
-
-<div class="highlights">
-<div class="card" data-aos="fade-right"><strong>ML & AI</strong><span>Modeling, evaluation, deployment</span></div>
-<div class="card" data-aos="fade-up"><strong>Production</strong><span>APIs, pipelines, monitoring</span></div>
-<div class="card" data-aos="fade-left"><strong>Research</strong><span>NLP, CV, optimization</span></div>
-</div>
-</div>
+    <div class="highlights">
+      <div class="card" data-aos="fade-right" data-aos-duration="800"><strong>ML & AI</strong><span>Modeling, evaluation, deployment</span></div>
+      <div class="card" data-aos="fade-up" data-aos-duration="800"><strong>Production</strong><span>APIs, pipelines, monitoring</span></div>
+      <div class="card" data-aos="fade-left" data-aos-duration="800"><strong>Research</strong><span>NLP, CV, optimization</span></div>
+    </div>
+  </div>
 </section>
 
+<!-- Featured Projects Preview -->
+<section class="projects-preview" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <div class="project-card" data-aos="fade-right" data-aos-duration="800">
+        <h3>Sentiment Analysis on Product Reviews</h3>
+        <p>Built and evaluated ML models (SVM, Random Forest) for classifying product reviews. Implemented preprocessing, feature extraction (TF-IDF), and model comparison.</p>
+        <p class="meta">Tech: Python, scikit-learn, pandas, TF-IDF</p>
+        <a class="btn small" href="#">View Repo</a>
+      </div>
 
-<!-- Quick Projects preview -->
-<section class="projects-preview" data-aos="fade-up">
-<div class="container">
-<h2>Featured Projects</h2>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="800">
+        <h3>Fake News Detection System</h3>
+        <p>Designed a hybrid approach combining classical ML and feature engineering to detect misinformation with strong accuracy and explainability.</p>
+        <p class="meta">Tech: Python, scikit-learn, NLP</p>
+        <a class="btn small" href="#">View Repo</a>
+      </div>
+
+      <div class="project-card" data-aos="fade-left" data-aos-duration="800">
+        <h3>Resume Parser</h3>
+        <p>Automated parser to extract sections from resumes, normalize text, and export structured CSV data for recruiters.</p>
+        <p class="meta">Tech: Python, regex, pandas</p>
+        <a class="btn small" href="#">View Repo</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Sanjay S</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
