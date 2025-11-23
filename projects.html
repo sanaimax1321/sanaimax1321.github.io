@@ -1,0 +1,82 @@
+--- projects.html ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects — Sanjay S</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav-wrap">
+<div class="container nav">
+<a class="brand" href="index.html">Sanjay S</a>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="projects-list" data-aos="fade-up">
+<div class="container">
+<h1>Projects</h1>
+
+
+<div id="projectsGrid" class="projects-grid">
+<!-- Project 1 -->
+<article id="sentiment" class="project-item" data-aos="fade-right">
+<h3>Sentiment Analysis on Product Reviews</h3>
+<p>Built and evaluated ML models (SVM, Random Forest) for classifying product reviews. Implemented preprocessing, feature extraction (TF-IDF), and model comparison.</p>
+<p class="meta">Tech: Python, scikit-learn, pandas, TF-IDF</p>
+<a class="btn small" href="#">View Repo</a>
+</article>
+
+
+<!-- Project 2 -->
+<article id="fakenews" class="project-item" data-aos="fade-left">
+<h3>Fake News Detection System</h3>
+<p>Designed a hybrid approach combining classical ML and feature engineering to detect misinformation with strong accuracy and explainability.</p>
+<p class="meta">Tech: Python, scikit-learn, NLP</p>
+<a class="btn small" href="#">View Repo</a>
+</article>
+
+
+<!-- Project 3 -->
+<article id="resume" class="project-item" data-aos="fade-right">
+<h3>Resume Parser</h3>
+<p>Automated parser to extract sections from resumes, normalize text, and export structured CSV data for recruiters.</p>
+<p class="meta">Tech: Python, regex, pandas</p>
+<a class="btn small" href="#">View Repo</a>
+</article>
+</div>
+
+
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; 2025 Sanjay S</p>
+</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 800, once: true });
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
